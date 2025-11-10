@@ -19,6 +19,7 @@ It combines speech recognition (Whisper) and automatic text summarization (BART/
 
 ## 2. Project Architecture
 
+```
 .
 ├── main.py                  # FastAPI entrypoint (includes routers, CORS, etc.)
 ├── app/
@@ -28,6 +29,7 @@ It combines speech recognition (Whisper) and automatic text summarization (BART/
 │       ├── transcription.py # Audio transcription with Whisper
 │       └── notes.py         # Summarization + report generation
 └── downloads/               # Generated Markdown reports
+```
 
 ---
 
@@ -121,6 +123,7 @@ It minimizes memory overhead and avoids temporary storage duplication.
 
 ## 7. Example Output
 
+```
 # Meeting Report
 
 ## Topics Discussed
@@ -139,6 +142,7 @@ The meeting focused on sprint planning and design validation.
 
 ## Full Transcription
 Let's review the sprint timeline...
+```
 
 ---
 
@@ -171,7 +175,7 @@ uvicorn main:app --reload
 
 ---
 
-## 9. Author
+## 10. Author
 
 **Roxane Kouamé**  
 Engineer in Embedded Systems & Artificial Intelligence  
